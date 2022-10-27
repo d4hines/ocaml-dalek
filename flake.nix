@@ -26,7 +26,7 @@
       in rec {
         packages = {
           libdalek_rs = code.libdalek_rs;
-          ocaml-dalek = builtins.trace code code.ocaml_dalek;
+          ocaml-dalek = code.ocaml-dalek;
           all = pkgs.symlinkJoin {
             name = "all";
             paths = with code; [ (ocaml-dalek pkgs.ocaml-ng.ocamlPackages_5_00) libdalek_rs ];
