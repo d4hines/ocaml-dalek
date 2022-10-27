@@ -29,7 +29,7 @@
           ocaml-dalek = code.ocaml_dalek;
           all = pkgs.symlinkJoin {
             name = "all";
-            paths = with code; [ (ocaml-dalek pkgs.ocaml-ng.ocamlPackages_5_0) libdalek_rs ];
+            paths = with code; [ (ocaml-dalek pkgs.ocaml-ng.ocamlPackages_5_00) libdalek_rs ];
           };
           default = packages.all;
         };
